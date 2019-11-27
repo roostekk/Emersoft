@@ -1,0 +1,48 @@
+@import "_partials/variables";
+
+.search-panel {
+  background-color: $gray;
+  padding: 10px 24px;
+
+  .mat-form-field {
+    width: 100%;
+  }
+}
+.filters {
+  &__box {
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    background-color: rgba($blue, .3);
+  }
+
+  &__item {
+    margin: 0 10px;
+
+    &--clear {
+      margin-left: auto;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__name {
+    font-size: 13px;
+    text-transform: capitalize;
+
+    &--order {
+      text-transform: uppercase;
+      opacity: .5;
+    }
+  }
+}
+
+.songs {
+  padding: 24px;
+}
